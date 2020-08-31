@@ -1740,6 +1740,13 @@ footer ul li a i{
 	 padding: 0;
 	 font-size: 18px;
 	 line-height: 20px;
+
+	}
+	.headname{
+		margin-top:5%;
+	}
+	.navbar-brand img{
+		margin:inherit; 
 	}
   .section-header {
     margin-bottom: 60px;
@@ -1805,7 +1812,7 @@ footer ul li a i{
     display: block;
     width: 100%;
     text-align: center;
-    
+
     padding: 8px 10px;
     /* background: rgb(26, 26, 25); */
   }
