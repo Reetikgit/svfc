@@ -1733,6 +1733,7 @@ footer ul li a i{
  
 
 @media only screen and (max-width: 767px) {
+
  .navbar-brand{
 	 float:none !important;
 	 height: 0;
@@ -1758,8 +1759,22 @@ footer ul li a i{
       -ms-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s;
+      background-color: transparent;
+      color: #ffffff;
       padding: 10px 15px;
       text-transform: uppercase;
+
+  }
+  .main-menu .navbar-nav li a:hover,
+  .main-menu .navbar-nav li.active a{
+      background-color: rgb(60,70,80,0.8);
+      color: #f7f7f7;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      padding: 10px;
   }
 
   .navbar-toggle .icon-bar {
@@ -1779,13 +1794,18 @@ footer ul li a i{
 }
   .main-menu .navbar-nav {
     float: none;
+    text-align: center;
+    margin-right: 0%;
+
     padding: 10px 0;
+    background-color:  #201620;
   }
 
   .main-menu .navbar-nav li {
     display: block;
     width: 100%;
-    text-align: right;
+    text-align: center;
+    
     padding: 8px 10px;
     /* background: rgb(26, 26, 25); */
   }
