@@ -1448,7 +1448,7 @@ header.page-header .main-menu.minified{
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url(../images/preloader.gif);
+    background-image: url(../images/loader.gif);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
