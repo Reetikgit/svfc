@@ -43,7 +43,13 @@ header.page-header{
 	background-size: cover;
 	position: relative;
 }
+.highlight-texts{
 
+  	font-family: kutu;
+  	font-size: 0.7em;
+  	font-style:cursive;
+  	text-transform: initial;
+}
 .page-title{
 	position: relative;
 	z-index: 1;
