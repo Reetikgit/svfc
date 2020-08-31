@@ -25,13 +25,14 @@
 <body>
     <!-- Preloader -->
     <div class="preloader">
-        <div class="status"></div>
+        <div class="status" id="loader"></div>
     </div>
  
     <!-- Header End -->
     <header>
         <!-- Navigation Menu start-->
 <!-- 	<marquee><h4 style="margin-top: 0%;color: red;padding: 0px;" >sdfdsugsgvshgv</h4></marquee> -->
+    <marquee  scrollamount="15" class="webquote" style=""> <h5 class="runningquotes">COLLEGE BUSSES ARE AVAILABLE FOM ALL THE ROUTES</h5></marquee>
 	<nav id="topNav" class="navbar navbar-default main-menu">
 
     <div class="container">
@@ -82,95 +83,9 @@
 
 
     <section class="slider-pro slider" id="slider">
-        <div class="sp-slides">
+        <div class="sp-slides" id="showslider">
 
-            <!-- Slides -->
-            <div class="sp-slide main-slides">
-                <div class="img-overlay"></div>
-                <div class="img-overlay2"></div>
-                <img class="sp-image" style="" src="https://saividya.ac.in/storage/1595535052.7579slide2.42XZ.jpeg" alt="Slider 1"/>
-                <div class="caption">
-					<h1 class="sp-layer slider-text-big"
-					data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-					<span class="highlight-texts">Above and Beyond!</span>
-					</h1> 
-					<p class="sp-layer"
-					data-position="center" data-vertical="15%" data-show-delay="1000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit
-					</p>
-				</div>
-            </div>
-            <!-- Slides End -->
-
-            <!-- Slides -->
-            <div class="sp-slide main-slides">
-            <div class="img-overlay"></div>
-            <div class="img-overlay2"></div>
-                <img class="sp-image" src="images/slide10.jpeg" alt="Slider 2"/>
-                <div class="caption">
-                <h1 class="sp-layer slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="highlight-texts">Early Learning</span>
-                </h1>
-
-                <p class="sp-layer"
-                data-position="center" data-vertical="15%" data-show-delay="1000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                </p>
-				</div>
-            </div>
-            <!-- Slides End -->
-
-            <!-- Slides -->
-            <div class="sp-slide main-slides">
-                <div class="img-overlay"></div>
-                <div class="img-overlay2"></div>
-                <img class="sp-image" src="https://saividya.ac.in/storage/1595535052.758slide3.zddA.jpeg" alt="Slider 3"/>
-				<div class="caption">
-                <h1 class="sp-layer slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="highlight-texts">Right Experiences</span>
-                </h1>
-
-                <p class="sp-layer"
-                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                </p>
-				</div>
-            </div>
-            <div class="sp-slide main-slides">
-                <div class="img-overlay"></div>
-                <div class="img-overlay2"></div>
-                <img class="sp-image" src="https://saividya.ac.in/storage/1595535052.7577slide1.uvYn.jpeg" alt="Slider 3"/>
-                <div class="caption">
-                <h1 class="sp-layer slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="highlight-texts">Right Experiences</span>
-                </h1>
-
-                <p class="sp-layer"
-                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                </p>
-                </div>
-            </div>
-            <div class="sp-slide main-slides">
-                <div class="img-overlay"></div>
-                <div class="img-overlay2"></div>
-                <img class="sp-image" src="images/slide7.jpeg" alt="Slider 3"/>
-                <div class="caption">
-                <h1 class="sp-layer slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="highlight-texts">Right Experiences</span>
-                </h1>
-
-                <p class="sp-layer"
-                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                </p>
-                </div>
-            </div>
-            <!-- Slides End -->
+        
 
         </div>
     </section>
@@ -786,6 +701,62 @@
 	<!-- <script src="contact/jqBootstrapValidation.js"></script> -->
 <!-- 	<script src="contact/contact_me.js"></script> -->
 	<script src="js/custom.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+    <script type="text/javascript">
+        // document.onreadystatechange = function() { 
+        //     if (document.readyState !== "complete") { 
+        //         document.querySelector("body").style.visibility = "hidden"; 
+        //         document.querySelector("#loader").style.visibility = "visible"; 
+        //     } else { 
+        //         document.querySelector("#loader").style.display = "none"; 
+        //         document.querySelector("body").style.visibility = "visible"; 
+        //     } 
+        // }; 
+        var firebaseConfig = {
+            apiKey: "AIzaSyBGnkLNGCt53P_TmBsfezid52nTYVIdFvU",
+            authDomain: "svfcweb.firebaseapp.com",
+            databaseURL: "https://svfcweb.firebaseio.com",
+            projectId: "svfcweb",
+            storageBucket: "svfcweb.appspot.com",
+            messagingSenderId: "999855456006",
+            appId: "1:999855456006:web:c12afd817a3ee49672a887"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+
+          let formMessage=firebase.database().ref('SliderImages')
+          formMessage.on('value',showData,errData)
+
+          function showData(data) {
+
+            var sc =data.val();
+            var keys=Object.keys(sc)
+            for(var i=0;i<keys.length;i++){
+                var k=keys[i];
+                var url=sc[k].Image;
+                var data=sc[k].SliderData;
+                document.getElementById("showslider").innerHTML+=
+                `
+                        <div class="sp-slide main-slides">
+                            <div class="img-overlay"></div>
+                            <div class="img-overlay2"></div>
+                            <img class="sp-image" style="" src="`+url+`" alt="Slider 1"/>
+                            <div class="caption">
+                                <h1 class="sp-layer slider-text-big"
+                                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
+                                <span class="highlight-texts">`+data+`</span>
+                                </h1> 
+                                
+                            </div>
+                        </div>                
+                `
+            }
+
+          }
+          function errData(){
+
+          }
+    </script>
 
 </body>
 </html>

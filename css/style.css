@@ -1592,6 +1592,30 @@ footer ul li a i{
 		margin-top: 2%;
 		font-size: 1.5em;
 	}
+	.main-menu{
+		margin-top:2.1%;
+	}
+	.runningquotes{
+		position: relative;
+		font-family: kutu;
+		margin-top: 0%;
+		text-align: center;
+		margin:5px;
+	    font-size: 1rem;
+	    font-weight: normal;
+	    font-style:
+	    text-transform: initial;
+	    font-weight: bolder;
+	    color: black;  
+	}
+	.webquote{
+		position: fixed;
+		z-index: 1099;
+		background-color: rgb(194, 123, 23,1);
+		border-bottom:2px solid brown;
+		top:0;
+		border-radius: 15px 0 15px 0px;
+	}
 	.hidequote{
 		display: none;
 	}
@@ -1673,7 +1697,41 @@ footer ul li a i{
     float: none;
     text-align: center;
   }
-
+  .runningquotes{
+  	position: relative;
+  	font-family: kutu;
+  	margin-top: 0%;
+  	text-align: center;
+  	margin:5px;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style:
+      text-transform: initial;
+      font-weight: bolder;
+      color: black;  
+  }
+  .webquote{
+  	position: fixed;
+  	z-index: 1099;
+  	background-color: rgb(194, 123, 23,1);
+  	border-bottom:2px solid brown;
+  	top:0;
+  	border-radius: 15px 0 15px 0px;
+  }
+  .hidequote{
+  	display: none;
+  }
+  .quotes{
+  	position: relative;
+  	font-family: kutu;
+  	margin-top: -2%;
+      font-size: 1rem;
+      font-weight: normal;
+      font-style: italic;
+      text-transform: initial;
+      font-weight: bolder;
+      
+  }
   .navbar-brand {
     float: none;
     font-size: 18px;
@@ -1740,6 +1798,9 @@ footer ul li a i{
 	a .logo{
 
 	}
+	.webquote{
+		display: none;
+	}
 	.quotes{
 		position: relative;
 		font-family: kutu;
@@ -1762,9 +1823,7 @@ footer ul li a i{
 	    font-style:
 	    text-transform: initial;
 	    font-weight: bolder;
-	    color: black;
-
-	    
+	    color: black;  
 	}
 
  .navbar-brand{
