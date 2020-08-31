@@ -1592,6 +1592,9 @@ footer ul li a i{
 		margin-top: 2%;
 		font-size: 1.5em;
 	}
+	.hidequote{
+		display: none;
+	}
 	.quotes{
 		position: relative;
 		font-family: kutu;
@@ -1734,19 +1737,56 @@ footer ul li a i{
 
 @media only screen and (max-width: 767px) {
 
+	a .logo{
+
+	}
+	.quotes{
+		position: relative;
+		font-family: kutu;
+		margin-top: -2%;
+	    font-size: 1rem;
+	    font-weight: normal;
+	    font-style: italic;
+	    text-transform: initial;
+	    font-weight: bolder;
+	    
+	}
+	.runningquotes{
+		position: relative;
+		font-family: kutu;
+		margin-top: 0%;
+		text-align: center;
+		margin:5px;
+	    font-size: 1rem;
+	    font-weight: normal;
+	    font-style:
+	    text-transform: initial;
+	    font-weight: bolder;
+	    color: black;
+
+	    
+	}
+
  .navbar-brand{
 	 float:none !important;
 	 height: 0;
 	 padding: 0;
 	 font-size: 18px;
-	 line-height: 20px;
+	 line-height: -10px;
 
 	}
 	.headname{
 		margin-top:5%;
+		font-size: 1.2em;
 	}
-	.navbar-brand img{
+	.marquee{
+		background-color: orange;
+		height:2px; 
+	}
+	.navbar-brand .logo{
 		margin:inherit; 
+		padding-top:10px; 
+
 	}
   .section-header {
     margin-bottom: 60px;
