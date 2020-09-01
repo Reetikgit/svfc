@@ -1596,7 +1596,7 @@ footer ul li a i{
 @media only screen and (min-width: 1200px) {
 	.headname{
 		margin-top: 2%;
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	.main-menu{
 		margin-top:2.1%;
@@ -1613,6 +1613,11 @@ footer ul li a i{
 	    text-transform: initial;
 	    font-weight: bolder;
 	    color: black;  
+	}
+	.mainhead{
+		color:  #4b2822;
+		font-family: futu;
+		font-size:1.9em;
 	}
 	.webquote{
 		position: fixed;
@@ -1805,12 +1810,20 @@ footer ul li a i{
 
 	}
 	.webquote{
-		display: none;
+		/*display: none;*/
+		font-family: futu;
+		bottom: 0;
+		position: fixed;
+		z-index: 999;
+		background-color: rgb(194, 123, 23,1);
+		border-bottom:1px solid brown;
+		height: 4%;
+		border-radius: 0px 0 0px 0px;
 	}
 	.quotes{
 		position: relative;
-		font-family: kutu;
-		margin-top: -2%;
+		font-family: futu;
+		margin-top: -4%;
 	    font-size: 1rem;
 	    font-weight: normal;
 	    font-style: italic;
@@ -1818,9 +1831,14 @@ footer ul li a i{
 	    font-weight: bolder;
 	    
 	}
+	.mainhead{
+		color:  #4b2822;
+		font-family: futu;
+		font-size:1.5em;
+	}
 	.runningquotes{
 		position: relative;
-		font-family: kutu;
+		font-family: futu;
 		margin-top: 0%;
 		text-align: center;
 		margin:5px;
@@ -1832,7 +1850,7 @@ footer ul li a i{
 	    color: black;  
 	}
 
- .navbar-brand{
+ 	.navbar-brand{
 	 float:none !important;
 	 height: 0;
 	 padding: 0;
@@ -1840,9 +1858,15 @@ footer ul li a i{
 	 line-height: -10px;
 
 	}
+ 	.navbar .container{
+	 height: 5px;
+	}
+	.navbar img{
+		width: 15%;
+	}
 	.headname{
-		margin-top:5%;
-		font-size: 1.2em;
+		margin-top:3%;
+		font-size: 1em;
 	}
 	.marquee{
 		background-color: orange;
