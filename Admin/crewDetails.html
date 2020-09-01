@@ -29,7 +29,53 @@ The above copyright notice and this permission notice shall be included in all c
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
+<style type="text/css">
+  .collapsible {
+    background-color:white;
+    color: brown;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border:1px solid brown;
+    border-radius: 0 10px 10px 0;
+    margin-bottom:2%;
 
+
+
+  }
+
+  .active, .collapsible:hover {
+    background-color: rgb(100,90,80,0.4);
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: brown;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+
+
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .content {
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    overflow: scroll;
+
+  }
+</style>
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
@@ -167,53 +213,125 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </nav>
       <!-- End Navbar -->
-      <div class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card">
+
+      <div class="content" >
+        <div class="container-fluid" >
+          <div class="row" >
+            <div class="col-md-12" >
+              <div class="card" >
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title">Add a new crew Member</h4>
-                  <p class="card-category">Enter the details here</p>
+                  <h4 class="card-title" >About </h4>
+                  <!-- <p class="card-category">Se</p> -->
                 </div>
                 <div class="card-body">
-                  
-                    <div class="row">
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <label class="bmd-label-floating" >Name</label>
-                          <input type="text" class="form-control" id="name">
-                        </div>
-                      </div>
-                      <div class="col-md-3">
-                        <div class="form-group">
-                          <label class="bmd-label-floating">Post</label>
-                          <input type="text" class="form-control" id="post">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Description</label>
-                          <div class="form-group">
-                            <label class="bmd-label-floating">Write something about your crew member</label>
-                            <textarea class="form-control" rows="5" id="description"></textarea>
+                  <button class="collapsible">Description</button>
+                  <div class="content">
+                      <!--  -->
+                       <div class="row">
+                         <div class="col-md-12">
+                           <div class="form-group">
+                             
+                             <div class="form-group">
+                               <label class="bmd-label-floating">Start Writing Here</label>
+                               <textarea class="form-control" rows="5" id="description"></textarea>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                       <div class="clearfix"></div>
+                     
+                   </div>
+                   <button class="collapsible">Main Description-1</button>
+                   <div class="content">
+                       <!--  -->
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              
+                              <div class="form-group">
+                                <label class="bmd-label-floating">Start Writing Here</label>
+                                <textarea class="form-control" rows="5" id="description"></textarea>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-4">
-                        
-                          <label class="bmd-label-floating">Upload an Image</label>
-                          <input type="file" id="fileSubmit" name="img" accept="image/*" required="Please upload your photo" style="color: blue;border:2px solid gray" class="form-control">
-                        
-                      </div>
+                        <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                        <div class="clearfix"></div>
+                      
                     </div>
-                    <progress value="0" max = "100" id="uploader" > 0%</progress><p id="demo"></p>
-                    <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
-                    <div class="clearfix"></div>
+                    <button class="collapsible">Main Description-2</button>
+                    <div class="content">
+                        <!--  -->
+                         <div class="row">
+                           <div class="col-md-12">
+                             <div class="form-group">
+                               
+                               <div class="form-group">
+                                 <label class="bmd-label-floating">Start Writing Here</label>
+                                 <textarea class="form-control" rows="5" id="description"></textarea>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                         <div class="clearfix"></div>
+                     </div>
+                     <button class="collapsible">Vision</button>
+                     <div class="content">
+                         <!--  -->
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                
+                                <div class="form-group">
+                                  <label class="bmd-label-floating">Start Writing Here</label>
+                                  <textarea class="form-control" rows="5" id="description"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                          <div class="clearfix"></div>
+                        
+                      </div>
+                      <button class="collapsible">Mission</button>
+                      <div class="content">
+                          <!--  -->
+                           <div class="row">
+                             <div class="col-md-12">
+                               <div class="form-group">
+                                 
+                                 <div class="form-group">
+                                   <label class="bmd-label-floating">Start Writing Here</label>
+                                   <textarea class="form-control" rows="5" id="description"></textarea>
+                                 </div>
+                               </div>
+                             </div>
+                           </div>
+                           <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                           <div class="clearfix"></div>
+                         
+                       </div>
+                       <button class="collapsible">Image</button>
+                       <div class="content">
+                           <!--  -->
+                              <div class="col-md-4">
+                                
+                                  <label class="bmd-label-floating">Upload an Image</label>
+                                  <input type="file" id="fileSubmit" name="img" accept="image/*" required="Please upload your photo" style="color: blue;border:2px solid gray" class="form-control">
+                                
+                              </div>
+                           
+                            <progress value="0" max = "100" id="uploader" > 0%</progress><p id="demo"></p>
+                            <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                            <div class="clearfix"></div>
+                          
+                        </div>
+                  </div>
+
                   
-                </div>
+                    
               </div>
             </div>
 
@@ -378,22 +496,36 @@ The above copyright notice and this permission notice shall be included in all c
   <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
 
   <script type="text/javascript">
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
     
      // Your web app's Firebase configuration
       var firebaseConfig = {
-        apiKey: "AIzaSyCPqE2ec9UFt9VnPU3i4wsC2-Le23GpgPc",
-        authDomain: "harpreetpahulphotography-f2d09.firebaseapp.com",
-        databaseURL: "https://harpreetpahulphotography-f2d09.firebaseio.com",
-        projectId: "harpreetpahulphotography-f2d09",
-        storageBucket: "harpreetpahulphotography-f2d09.appspot.com",
-        messagingSenderId: "1061490631813",
-        appId: "1:1061490631813:web:5ac0debcacb8f7e71a75ec"
-      };
+          apiKey: "AIzaSyBGnkLNGCt53P_TmBsfezid52nTYVIdFvU",
+          authDomain: "svfcweb.firebaseapp.com",
+          databaseURL: "https://svfcweb.firebaseio.com",
+          projectId: "svfcweb",
+          storageBucket: "svfcweb.appspot.com",
+          messagingSenderId: "999855456006",
+          appId: "1:999855456006:web:c12afd817a3ee49672a887"
+        };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
 
-      let formMessage = firebase.database().ref('CrewDetails');
-      let ref= firebase.database().ref('CrewDetails');
+      let formMessage = firebase.database().ref('About');
+      let ref= firebase.database().ref('About');
 
       ref.on('value',gotData,errData);
 
@@ -596,16 +728,17 @@ The above copyright notice and this permission notice shall be included in all c
 
 
 
-      function sendMessage(Name , Post ,Description ,Url){
-        let newFormMessage = formMessage.push();
+      function sendMessage(Name , Post ,Description ,Url,Vission,Mission){
+        // let newFormMessage = formMessage.push();
 
-          newFormMessage.set({
+          formMessage.set({
 
-          Name : Name,
-          Post : Post,
           Description : Description,
+          MainDescription1 : MainDescription1,
+          MainDescription2 : MainDescription2,
           Image: Url,
-          Status:"Active"
+          Vision:Vision,
+          Mission:Mission
    
         });
 
