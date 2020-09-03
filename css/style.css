@@ -734,7 +734,49 @@ header.page-header .main-menu.minified{
 	overflow: hidden;
 	background-color: #2A2B32;
 }
-
+ .img-overlayabt{
+ 		position: absolute;
+ 		width: 50%;
+ 		height: 50%;
+ 		/* top: 0; */
+ 	/*	bottom: 0%;*/
+ 		
+ 		right: 0;
+ 		background: rgba(82, 17, 12,0.6);; 
+ 		background: -webkit-linear-gradient(left, rgba(82, 17, 12,0.6), white 70%);
+ 		border:2px solid white;
+ 	/*	border-radius: 0 100px 0 0px;*/
+ 		margin-top: -5%;
+ 		padding: 15% 20px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
+ 		
+ 		-webkit-transform: skewY(-5deg);
+ 		-moz-transform: skewY(-5deg);
+ 		-ms-transform: skewY(-5deg);
+ 		-o-transform: skewY(-5deg);
+ 		transform: skewY(-5deg);
+}
+ .img-overlayabt2{
+ 		position: absolute;
+ 		width: 50%;
+ 		height: 50%;
+ 		/* top: 0; */
+ 	/*	bottom: 0%;*/
+ 		
+ 		right: 0;
+ 		margin-right: 50%;
+ 		background: rgba(82, 17, 12,0.6);; 
+ 		background: -webkit-linear-gradient(left, rgba(82, 17, 12,0.6), white 70%);
+ 		border:2px solid white;
+ 	/*	border-radius: 0 100px 0 0px;*/
+ 		margin-top: 0%;
+ 		padding: 15% 20px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
+ 		
+ 		-webkit-transform: skewY(-15deg);
+ 		-moz-transform: skewY(15deg);
+ 		-ms-transform: skewY(25deg);
+ 		-o-transform: skewY(15deg);
+ 		transform: skewY(15deg);
+}
 .main-slides .img-overlay{
 	position: absolute;
 	width: 90%;
@@ -783,19 +825,20 @@ header.page-header .main-menu.minified{
 	height: 100%;
 	/* top: 0; */
 /*	bottom: 0%;*/
-	left:%;
+	
 	right: 0;
-	background: rgba(64, 145, 189,0.5);; 
+	background: rgba(82, 17, 12,0.6);; 
+	background: -webkit-linear-gradient(left, rgba(82, 17, 12,0.6), white 70%);
 	border:2px solid white;
 /*	border-radius: 0 100px 0 0px;*/
-	margin-top: 0px;
+	margin-top: -3%;
 	padding: 15% 20px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
 	
-	/*-webkit-transform: skewY(-15deg);
+	-webkit-transform: skewY(-15deg);
 	-moz-transform: skewY(15deg);
 	-ms-transform: skewY(25deg);
 	-o-transform: skewY(15deg);
-	transform: skewY(15deg);*/
+	transform: skewY(15deg);
 }
 .caption {
     width: 100%;
@@ -1826,6 +1869,9 @@ footer ul li a i{
  
 
 @media only screen and (max-width: 767px) {
+	.onlyweb{
+		display: none;
+	}
 
 	.navbar-toggler {
 	    padding: .5rem .75rem;
@@ -2076,3 +2122,217 @@ footer ul li a i{
 
 }
 
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+  z-index: 999;
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 999;
+
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 999;
+  overflow: scroll;
+}
+.popup {
+  margin: 70px auto;
+  margin-top: 10%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  z-index: 999;
+  position: relative;
+  transition: all 5s ease-in-out;
+
+}
+.popup:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 20px 20px 20px;
+  z-index: 999;
+  border-color: transparent transparent white transparent;
+
+}
+.overlay:target .popup {
+  animation: popup 0.7s;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+
+}
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+@keyframes popup {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.slick-slide {
+  margin: 90px 20px;
+  padding: 0px;
+
+
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #ffffff;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  padding: 0px;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
