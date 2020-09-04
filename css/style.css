@@ -1689,7 +1689,7 @@ footer ul li a i{
 		background-color: rgb(194, 123, 23,1);
 		border-bottom:2px solid darkgreen;
 		top:0;
-		border-radius: 15px 0 15px 0px;
+		border-radius: 5px 0 5px 0px;
 	}
 	.hidequote{
 		display: none;
@@ -2336,4 +2336,11 @@ footer ul li a i{
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+.btnf{
+	background-color:transparent;
+	color: white;
+	padding: 10px;
+	border:1px solid black;
+	
 }
