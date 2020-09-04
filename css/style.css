@@ -2123,11 +2123,7 @@ footer ul li a i{
 }
 
 .box {
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: 40%;
->>>>>>> 49ed4e4ebf18336090eaad45f0dfa0fd20b6daf0
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.2);
   padding: 35px;
@@ -2164,11 +2160,7 @@ footer ul li a i{
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-<<<<<<< HEAD
   width: 100%;
-=======
-  width: 60%;
->>>>>>> 49ed4e4ebf18336090eaad45f0dfa0fd20b6daf0
   z-index: 999;
   position: relative;
   transition: all 5s ease-in-out;
@@ -2213,17 +2205,10 @@ footer ul li a i{
 }
 @media screen and (max-width: 700px) {
   .box {
-<<<<<<< HEAD
     width: 100%;
   }
   .popup {
     width: 100%;
-=======
-    width: 70%;
-  }
-  .popup {
-    width: 70%;
->>>>>>> 49ed4e4ebf18336090eaad45f0dfa0fd20b6daf0
   }
 }
 @keyframes popup {
@@ -2254,10 +2239,7 @@ footer ul li a i{
   padding: 0px;
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 49ed4e4ebf18336090eaad45f0dfa0fd20b6daf0
 }
 
 .slick-slide img {
