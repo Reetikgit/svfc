@@ -232,13 +232,13 @@ The above copyright notice and this permission notice shall be included in all c
                            <div class="form-group">
                              
                              <div class="form-group">
-                               <label class="bmd-label-floating">Start Writing Here</label>
-                               <textarea class="form-control" rows="5" id="description"></textarea>
+                               
+                               <textarea class="form-control" rows="5" id="d1"></textarea>
                              </div>
                            </div>
                          </div>
                        </div>
-                       <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                       
                        <div class="clearfix"></div>
                      
                    </div>
@@ -250,13 +250,13 @@ The above copyright notice and this permission notice shall be included in all c
                             <div class="form-group">
                               
                               <div class="form-group">
-                                <label class="bmd-label-floating">Start Writing Here</label>
-                                <textarea class="form-control" rows="5" id="description"></textarea>
+                                
+                                <textarea class="form-control" rows="5" id="d2"></textarea>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                        
                         <div class="clearfix"></div>
                       
                     </div>
@@ -268,13 +268,13 @@ The above copyright notice and this permission notice shall be included in all c
                              <div class="form-group">
                                
                                <div class="form-group">
-                                 <label class="bmd-label-floating">Start Writing Here</label>
-                                 <textarea class="form-control" rows="5" id="description"></textarea>
+                                 
+                                 <textarea class="form-control" rows="5" id="d3"></textarea>
                                </div>
                              </div>
                            </div>
                          </div>
-                         <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                    
                          <div class="clearfix"></div>
                      </div>
                      <button class="collapsible">Vision</button>
@@ -285,13 +285,13 @@ The above copyright notice and this permission notice shall be included in all c
                               <div class="form-group">
                                 
                                 <div class="form-group">
-                                  <label class="bmd-label-floating">Start Writing Here</label>
-                                  <textarea class="form-control" rows="5" id="description"></textarea>
+                                  
+                                  <textarea class="form-control" rows="5" id="vission"></textarea>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                        
                           <div class="clearfix"></div>
                         
                       </div>
@@ -303,35 +303,33 @@ The above copyright notice and this permission notice shall be included in all c
                                <div class="form-group">
                                  
                                  <div class="form-group">
-                                   <label class="bmd-label-floating">Start Writing Here</label>
-                                   <textarea class="form-control" rows="5" id="description"></textarea>
+                                   
+                                   <textarea class="form-control" rows="5" id="mission"></textarea>
                                  </div>
                                </div>
                              </div>
                            </div>
-                           <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
+                           
                            <div class="clearfix"></div>
                          
                        </div>
                        <button class="collapsible">Image</button>
                        <div class="content">
                            <!--  -->
+                              <img src="" id="imgs"  width="150" style="object-fit: contain;">
                               <div class="col-md-4">
-                                
+                                  
                                   <label class="bmd-label-floating">Upload an Image</label>
                                   <input type="file" id="fileSubmit" name="img" accept="image/*" required="Please upload your photo" style="color: blue;border:2px solid gray" class="form-control">
                                 
                               </div>
                            
                             <progress value="0" max = "100" id="uploader" > 0%</progress><p id="demo"></p>
-                            <button type="submit" class="btn btn-primary pull-right" id="crewDetailForm">Submit</button>
-                            <div class="clearfix"></div>
+                                                        <div class="clearfix"></div>
                           
                         </div>
                   </div>
-
-                  
-                    
+                  <button type="submit" class="btn btn-primary pull-right" id="btnsubmit">Submit</button> 
               </div>
             </div>
 
@@ -339,115 +337,11 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </div>
       <div class="col-md-12">
-        <div class="card card-profile" id="crewmembers">
-
-        </div>
+      
       </div>
-      <!-- <footer class="footer">
-        <div class="container-fluid">
-          <nav class="float-left">
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-              <li>
-                <a href="https://creative-tim.com/presentation">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="http://blog.creative-tim.com">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="https://www.creative-tim.com/license">
-                  Licenses
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="copyright float-right">
-            &copy;
-            <script>
-              document.write(new Date().getFullYear())
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
-          </div>
-        </div>
-      </footer> -->
     </div>
   </div>
-  <div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-      <a href="#" data-toggle="dropdown">
-        <i class="fa fa-cog fa-2x"> </i>
-      </a>
-      <ul class="dropdown-menu">
-        <li class="header-title"> Sidebar Filters</li>
-        <li class="adjustments-line">
-          <a href="javascript:void(0)" class="switch-trigger active-color">
-            <div class="badge-colors ml-auto mr-auto">
-              <span class="badge filter badge-purple" data-color="purple"></span>
-              <span class="badge filter badge-azure" data-color="azure"></span>
-              <span class="badge filter badge-green" data-color="green"></span>
-              <span class="badge filter badge-warning" data-color="orange"></span>
-              <span class="badge filter badge-danger" data-color="danger"></span>
-              <span class="badge filter badge-rose active" data-color="rose"></span>
-            </div>
-            <div class="clearfix"></div>
-          </a>
-        </li>
-        <li class="header-title">Images</li>
-        <li class="active">
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-1.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-2.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-3.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-4.jpg" alt="">
-          </a>
-        </li>
-        <li class="button-container">
-          <a href="https://www.creative-tim.com/product/material-dashboard" target="_blank" class="btn btn-primary btn-block">Free Download</a>
-        </li>
-        <!-- <li class="header-title">Want more components?</li>
-            <li class="button-container">
-                <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">
-                  Get the pro version
-                </a>
-            </li> -->
-        <li class="button-container">
-          <a href="https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
-            View Documentation
-          </a>
-        </li>
-        <li class="button-container github-star">
-          <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-        </li>
-        <li class="header-title">Thank you for 95 shares!</li>
-        <li class="button-container text-center">
-          <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>
-          <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>
-          <br>
-          <br>
-        </li>
-      </ul>
-    </div>
-  </div>
+
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
@@ -660,64 +554,119 @@ The above copyright notice and this permission notice shall be included in all c
 
           }
       }
-
+      btnsubmit.addEventListener('click', aftersubmit);
       function uploadFile(e){
         selectedFile=e.target.files[0];
-        crewDetailForm.addEventListener('click', aftersubmit);
+        sendimage();
       }
-
+      var icount=0;
+      var ncount=0;
       function aftersubmit(){
+          ncount++;
+          if(icount==0)
+          {
+            let d1 =document.querySelector('#d1').value;
+            let d2 =document.querySelector('#d2').value;
+            let d3 =document.querySelector('#d3').value;
+            let vission =document.querySelector('#vission').value;
+            let mission =document.querySelector('#mission').value;
 
-          let Name =document.querySelector('#name').value;
-          let Post =document.querySelector('#post').value;
-          let Description =document.querySelector('#description').value;
-
-          if(Name == "" || Post == "" || Description == "" ){
-            alert(" Please enter details in all the feilds ")
+            if(d1 == "" || d2 == "" || d3 == ""||vission==""||mission=="" ){
+              alert(" Please enter details in all the feilds ")
+            }
+            else{
+              // urls="https://images.shiksha.com/mediadata/images/1490609004phpCh2WHX.jpeg"
+              var answer=window.confirm("Are you sure, you want to Update the data ?")
+              if(answer){
+                sendMessage2(d1, d2 , d3 , vission,mission);
+                janelaPopUp.abre2( "example", 'p black',  '<img src="../assets/img/new_logo.png" width=40 height=40><br>Data Added Successfully' ,  '');
+                setTimeout(function(){janelaPopUp.fecha('example');}, 1100);
+              }
+            }
           }
-          else{
-              const  storageService = firebase.storage();
-              var uploadTask=storageService.ref(selectedFile.name).put(selectedFile);
-              console.log(selectedFile.getDownloadURL);
-              uploadTask.on('state_changed', function(snapshot){
-                var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                uploader.value = percentage;
-                progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        }
+          function sendimage(){
+            icount++;
+            if(ncount==0){
+                let d1 =document.querySelector('#d1').value;
+                let d2 =document.querySelector('#d2').value;
+                let d3 =document.querySelector('#d3').value;
+                let vission =document.querySelector('#vission').value;
+                let mission =document.querySelector('#mission').value;
 
-                document.getElementById("demo").innerHTML = progress;
-                  switch (snapshot.state) {
-                    case firebase.storage.TaskState.PAUSED: // or 'paused'
-                    document.getElementById("demo").innerHTML = "Upload Paused";
-                    console.log('Upload is paused');
-                    break;
-                    case firebase.storage.TaskState.RUNNING: // or 'running'
-                    document.getElementById("demo").innerHTML = "File is uploading"+ " "+progress+"%";
+                if(d1 == "" || d2 == "" || d3 == ""||vission==""||mission=="" ){
+                  alert(" Please enter details in all the feilds ")
+                }else{
+                  const  storageService = firebase.storage();
+                  var uploadTask=storageService.ref(selectedFile.name).put(selectedFile);
+                  console.log(selectedFile.getDownloadURL);
+                  uploadTask.on('state_changed', function(snapshot){
+                    var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    uploader.value = percentage;
+                    progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
 
-                    break;
+                    document.getElementById("demo").innerHTML = progress;
+                      switch (snapshot.state) {
+                        case firebase.storage.TaskState.PAUSED: // or 'paused'
+                        document.getElementById("demo").innerHTML = "Upload Paused";
+                        console.log('Upload is paused');
+                        break;
+                        case firebase.storage.TaskState.RUNNING: // or 'running'
+                        document.getElementById("demo").innerHTML = "File is uploading"+ " "+progress+"%";
+
+                        break;
+                      }
+                  },function(error){
+                      console.log(error);
+                        // Handle unsuccessful uploads
+                      }, function() {
+                  document.getElementById("demo").innerHTML = "Uploaded"+ " "+progress+"%";
+                  uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                  
+                  urls = downloadURL;
+
+                  var answer=window.confirm("Are you sure, you want to Update the data ?")
+                  if(answer){
+                    sendMessage(d1, d2 , d3 ,urls, vission,mission);
+                    janelaPopUp.abre2( "example", 'p black',  '<img src="../assets/img/new_logo.png" width=40 height=40><br>Data Added Successfully' ,  '');
+                    setTimeout(function(){janelaPopUp.fecha('example');}, 1100);
                   }
-              },function(error){
-                  console.log(error);
-                    // Handle unsuccessful uploads
-                  }, function() {
-              document.getElementById("demo").innerHTML = "Uploaded"+ " "+progress+"%";
-              uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
-              console.log('File available at', downloadURL);
-              urls = downloadURL;
-              sendMessage(Name , Post , Description , urls);
-              janelaPopUp.abre2( "example", 'p black',  '<img src="../assets/img/new_logo.png" width=40 height=40><br>Member Added Successfully' ,  '');
-              setTimeout(function(){janelaPopUp.fecha('example');}, 1100);
-              // window.location="CrewDetails.html"
-            });
-            });
+                  
+                  // window.location="CrewDetails.html"
+                });
+                });
 
-          }
+              }
+            }
+            
+        }
           
-      }
+      
 
       // Display all the Members Details Present//
       var names,post,description,imgurl,keys,k,sc;
       function gotData(data){
+   
+       sc=data.val();
+       keys=Object.keys(sc);
+
+       for(var i=0;i<keys.length;i++){
+      
+        k=keys[i];
+        d1=sc[k].Description;
+        d2=sc[k].MainDescription1;
+        d3=sc[k].MainDescription2;
+        vision=sc[k].Vision;
+        mission=sc[k].Mission;
+        image=sc[k].Image;
        
+        $('#d1').val(d1)
+        $('#d2').val(d2)
+        $('#d3').val(d3)
+        $('#vission').val(vision)
+        $('#mission').val(mission)
+        document.getElementById("imgs").src=image
+       }
 
       }
       function errData(err) {
@@ -727,24 +676,17 @@ The above copyright notice and this permission notice shall be included in all c
 
 
 
+      // let newFormMessage = formMessage.push();
+      function sendMessage(Description , MainDescription1 ,MainDescription2 ,Image,Vision,Mission){
 
-      function sendMessage(Name , Post ,Description ,Url,Vission,Mission){
-        // let newFormMessage = formMessage.push();
-
-          formMessage.set({
-
-          Description : Description,
-          MainDescription1 : MainDescription1,
-          MainDescription2 : MainDescription2,
-          Image: Url,
-          Vision:Vision,
-          Mission:Mission
-   
-        });
-
-
+          firebase.database().ref('About').child('-MGDIeg4347oMaD5sizL').update({Description,MainDescription1,MainDescription2,Image,Vision,Mission})
+          
       }
-    
+      function sendMessage2(Description , MainDescription1 ,MainDescription2 ,Vision,Mission){
+
+          firebase.database().ref('About').child('-MGDIeg4347oMaD5sizL').update({Description,MainDescription1,MainDescription2,Vision,Mission})
+          
+      }
   </script>
 
 

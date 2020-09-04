@@ -52,12 +52,7 @@ The above copyright notice and this permission notice shall be included in all c
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="../index.html">
-              <i class="material-icons">dashboard</i>
-              <p>HSP APP</p>
-            </a>
-          </li>
+          
           <li class="nav-item active  ">
             <a class="nav-link" href="./dashboard.html">
               <i class="material-icons">dashboard</i>
@@ -67,7 +62,7 @@ The above copyright notice and this permission notice shall be included in all c
           <li class="nav-item ">
             <a class="nav-link" href="./crewDetails.html">
               <i class="material-icons">person</i>
-              <p>Add Crew Members</p>
+              <p>About Section</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -77,19 +72,25 @@ The above copyright notice and this permission notice shall be included in all c
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./sliderDynamic.html">
+            <a class="nav-link" href="./running.html">
+              <i class="material-icons">content_paste</i>
+              <p>Running Text</p>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./programme.html">
               <i class="material-icons">library_books</i>
-              <p>Slider</p>
+              <p>Programme</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
+            <a class="nav-link" href="./recruiters.html">
               <i class="material-icons">bubble_chart</i>
-              <p>Icons</p>
+              <p>Recruiters</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./map.html">
+            <a class="nav-link" href="./recruiters.html">
               <i class="material-icons">location_ons</i>
               <p>Maps</p>
             </a>
@@ -270,7 +271,7 @@ The above copyright notice and this permission notice shall be included in all c
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#messages" data-toggle="tab">
-                            <i class="material-icons"></i> Manage Crew 
+                            <i class="material-icons"></i> Manage Running Text 
                             <div class="ripple-container"></div>
                           </a>
                         </li>
@@ -302,12 +303,14 @@ The above copyright notice and this permission notice shall be included in all c
                     <div class="tab-pane" id="messages">
                       <table class="table">
                         <thead class="text-warning" >
-                          <th>Member Name</th>
+                          <th>Text</th>
                           <th>Status</th>
+                          <th>Priority</th>
+                          <th>Edit Priority</th>
                           <th>Edit Status</th>
                           <th>Delete</th>
                         </thead>
-                        <tbody id="CrewAdminDetails">
+                        <tbody id="runningdata">
                          
                         </tbody>
                       </table>
@@ -470,74 +473,7 @@ The above copyright notice and this permission notice shall be included in all c
       </footer>
     </div>
   </div>
-  <div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-      <a href="#" data-toggle="dropdown">
-        <i class="fa fa-cog fa-2x"> </i>
-      </a>
-      <ul class="dropdown-menu">
-        <li class="header-title"> Sidebar Filters</li>
-        <li class="adjustments-line">
-          <a href="javascript:void(0)" class="switch-trigger active-color">
-            <div class="badge-colors ml-auto mr-auto">
-              <span class="badge filter badge-purple" data-color="purple"></span>
-              <span class="badge filter badge-azure" data-color="azure"></span>
-              <span class="badge filter badge-green" data-color="green"></span>
-              <span class="badge filter badge-warning" data-color="orange"></span>
-              <span class="badge filter badge-danger" data-color="danger"></span>
-              <span class="badge filter badge-rose active" data-color="rose"></span>
-            </div>
-            <div class="clearfix"></div>
-          </a>
-        </li>
-        <li class="header-title">Images</li>
-        <li class="active">
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-1.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-2.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-3.jpg" alt="">
-          </a>
-        </li>
-        <li>
-          <a class="img-holder switch-trigger" href="javascript:void(0)">
-            <img src="../assets/img/sidebar-4.jpg" alt="">
-          </a>
-        </li>
-        <li class="button-container">
-          <a href="https://www.creative-tim.com/product/material-dashboard" target="_blank" class="btn btn-primary btn-block">Free Download</a>
-        </li>
-        <!-- <li class="header-title">Want more components?</li>
-            <li class="button-container">
-                <a href="https://www.creative-tim.com/product/material-dashboard-pro" target="_blank" class="btn btn-warning btn-block">
-                  Get the pro version
-                </a>
-            </li> -->
-        <li class="button-container">
-          <a href="https://demos.creative-tim.com/material-dashboard/docs/2.1/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block">
-            View Documentation
-          </a>
-        </li>
-        <li class="button-container github-star">
-          <a class="github-button" href="https://github.com/creativetimofficial/material-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-        </li>
-        <li class="header-title">Thank you for 95 shares!</li>
-        <li class="button-container text-center">
-          <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>
-          <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>
-          <br>
-          <br>
-        </li>
-      </ul>
-    </div>
-  </div>
+ 
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
@@ -783,12 +719,12 @@ The above copyright notice and this permission notice shall be included in all c
  
 
       let ref= firebase.database().ref('SliderImages');
-      let refcrew= firebase.database().ref('CrewDetails');
+      let ref2= firebase.database().ref('RunningText');
       var storageService = firebase.storage();
       var key,keys=null;
       var sc,sc2=null;
       ref.on('value',gotData,errData);
-      refcrew.on('value',gotDataCrew,errData);
+      ref2.on('value',marquee,errData);
       function gotData(data){
         var btnstatus;
       
@@ -814,34 +750,33 @@ The above copyright notice and this permission notice shall be included in all c
           document.getElementById("sliderdata").innerHTML+='<h4>No sliders found!! To Upload a new slider click here <a href="sliderDynamic.html">UPLOAD</a></h4> '
         }
       }
-      function gotDataCrew(data){
+      function marquee(data){
         
         var btnstatus2;
         sc2=data.val();
         if(sc2!=null){
         
           key=Object.keys(sc2);
-          $('#CrewAdminDetails').empty();
+          $('#runningdata').empty();
           for(var i=0;i<key.length;i++){ 
                  
             k=key[i];
-            names =sc2[k].Name;
-            post =sc2[k].Post;
-            description =sc2[k].Description;
-            crewstatus=sc2[k].Status;
-            imgurl =sc2[k].Image;
-            if(crewstatus == "Active"){
+            data =sc2[k].Data;
+            priority =sc2[k].Priority;
+            status =sc2[k].Status;
+
+            if(status == "Active"){
               btnstatus2="Hide"
             }
             else{
               btnstatus2="Activate"
             }
-            document.getElementById("CrewAdminDetails").innerHTML+='<tr><td>'+names+'</td><td>'+crewstatus+'</td><td><button type="submit" onclick="updateCrew('+i+')" style="background-color:#ffffff;border:1px groove black;border-radius:5px;:" >'+btnstatus2+'</button></td><td class="td-actions text-right "><button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm"><i class="material-icons" onclick="removeMember('+i+')">delete</i></button></td></tr>'
+            document.getElementById("runningdata").innerHTML+='<tr><td>'+data+'</td><td>'+status+'</td><td>'+priority+'</td><td><input type="number" id="num'+i+'">&nbsp;&nbsp;<i class="fa fa-check" style="cursor:pointer" onclick=updatepriority("'+i+'","num'+i+'")></i></td><td><button type="submit" onclick=updateStatus("'+i+'") style="background-color:#ffffff;border:1px groove black;border-radius:5px;:" >'+btnstatus2+'</button></td><td class="td-actions text-right "><button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm"><i class="material-icons" onclick="remove('+i+')">delete</i></button></td></tr>'
         
           }
         }else{
           
-          document.getElementById("CrewAdminDetails").innerHTML+='<h4>No Members found!! To add a new member detail ,click here <a href="CrewDetails.html">Add a member</a></h4> '
+          document.getElementById("runningdata").innerHTML+='<h4>No texts found!! To add a new running text ,click here <a href="running.html">Add a Marquee</a></h4> '
         }
       }
       function updateSlider(index){
@@ -864,7 +799,7 @@ The above copyright notice and this permission notice shall be included in all c
 
         }
       }
-      function updateCrew(index){
+      function updateStatus(index){
         var Status=""
         var popuptxt;
         var k=key[index];
@@ -877,10 +812,21 @@ The above copyright notice and this permission notice shall be included in all c
           popuptxt="Activate"
         }
         data={Status}
-        var answer=window.confirm("Are you sure, you want to "+popuptxt+" the Member?")
+        var answer=window.confirm("Are you sure, you want to "+popuptxt+" the Text?")
         if(answer)
         {
-          firebase.database().ref("CrewDetails").child(k).update(data);
+          firebase.database().ref("RunningText").child(k).update(data);
+
+        }
+      }
+      function updatepriority(index,value){
+        k=key[index];
+        var answer=window.confirm("Are you sure, you want to change the priority?")
+        p=value
+        Priority=document.querySelector('#'+p).value;
+        if(answer && Priority.trim()!="")
+        {
+          firebase.database().ref("RunningText").child(k).update({Priority});
 
         }
       }
@@ -902,22 +848,13 @@ The above copyright notice and this permission notice shall be included in all c
 
         }
       }
-        function removeMember(index){
+        function remove(index){
 
           var k=key[index];
-          var urls=sc2[k].Image;
-          var desertRef = firebase.storage().refFromURL(urls);
-
           var answer=window.confirm("Are you sure, you want to Delete ?")
           if(answer){
-            desertRef.delete().then(function() {
-              firebase.database().ref("CrewDetails").child(k).remove();
-              alert("Member Deleted")// File deleted successfully
-            }).catch(function(error) {
-              alert("Uh-oh, an error occurred! Please Try Again")
-              // Uh-oh, an error occurred!
-            });
-
+              firebase.database().ref("RunningText").child(k).remove();
+              alert("Running Text Deleted Successfully")// File deleted successfully
           }
           // Delete the file
 
